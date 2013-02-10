@@ -1,4 +1,8 @@
 <div class="sharing">
+  {% if page.gitHubUser or post.gitHubUser %}
+  <iframe width="85" height="20" src="http://ghbtns.com/github-btn.html?user={{ page.gitHubUser }}{{ post.gitHubUser }}&repo={{ page.gitHubProject }}{{ post.gitHubProject }}&type=watch&count=true" frameborder="0" scrolling="0" allowtransparency="true"></iframe>
+  <iframe width="200" height="20" src="http://ghbtns.com/github-btn.html?user={{ page.gitHubUser }}{{ post.gitHubUser }}&type=follow&count=true" allowtransparency="true" frameborder="0" scrolling="0"></iframe>
+  {% endif %}
   {% if site.twitter_tweet_button %}
   <a href="http://twitter.com/share" class="twitter-share-button" data-url="{{ site.url }}{{ page.url }}" data-via="{{ site.twitter_user }}" data-counturl="{{ site.url }}{{ page.url }}" >Tweet</a>
   {% endif %}
