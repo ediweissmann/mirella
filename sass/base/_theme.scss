@@ -10,7 +10,7 @@ $link-color-active: $link-color !default;
 
 // Main Section Colors
 $main-bg: #FFF !default;
-$page-bg: #FFF !default;
+$page-bg: image-url('noise.png') !default;
 $article-border: #eeeeee !default;
 
 $header-bg: #FFF !default;
@@ -72,12 +72,9 @@ html {
   background: $page-bg top left;
 }
 body {
-	background-image: image-url('noise.png');
   > div {
-    background: $sidebar-bg;
     border-bottom: 1px solid $page-border-bottom;
     > div {
-      background: $main-bg;
       border-right: 1px solid $sidebar-border;
     }
   }
